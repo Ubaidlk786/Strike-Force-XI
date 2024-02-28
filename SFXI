@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strike Force XI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #091F4B;
+      color: white;
+      overflow-x: hidden; /* Ensure horizontal overflow is hidden */
+    }
+    header {
+      position: absolute;
+      top: 20px;
+      width: 100%;
+      text-align: center;
+      z-index: 1; /* Ensure header stays on top of background */
+    }
+    h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+    .strike {
+      color: red;
+    }
+    .force {
+      color: white;
+    }
+    .xi {
+      color: yellow;
+      font-weight: bold;
+      font-size: 40px; /* Increase font size */
+    }
+    nav {
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 20px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .hero {
+      position: relative;
+      height: 100vh; /* Ensure hero section takes full viewport height */
+      background-image: url('https://i.imgur.com/wEMEYKn.jpeg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Align content vertically centered */
+      padding: 20px;
+    }
+    .hero h2, .hero p {
+      margin: 0;
+      text-align: center;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #FDB827;
+      padding: 20px 0;
+      text-align: center;
+    }
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><span class="strike">Strike</span> <span class="force">Force</span> <span class="xi">XI</span></h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+ 
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to Strike Force XI</h2>
+      <p>We are a passionate cricket team dedicated to achieving excellence in the sport. Explore our website to learn more about us!</p>
+    </div>
+  </section>
+ 
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Strike Force XI was established in 2018 with the aim of bringing together talented cricketers to compete at the highest level. We are committed to promoting sportsmanship, teamwork, and dedication both on and off the field. Our team participates in various tournaments and leagues, striving to showcase our skills and passion for the game.</p>
+    </div>
+  </section>
+ 
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src=https://i.imgur.com/9QK0KwD.jpeg alt="Gallery Image 1">
+        <img src=https://i.imgur.com/EzaqANh.jpeg alt="Gallery Image 2">
+        <img src=https://i.imgur.com/rg6Ybp9.jpeg alt="Gallery Image 3">
+        <!-- Add more images as needed -->
+      </div>
+    </div>
+  </section>
+ 
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>If you have any inquiries or would like to get in touch with us, please fill out the form below:</p>
+      <form>
+        <label for="name">Name:</label> <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label> <input type="email" id="email" name="email" required><br>
+        <label for="message">Message:</label> <textarea id="message" name="message" rows="4" required></textarea><br>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+ 
+  <footer>
+    <p>&copy; 2024 Strike Force XI. All rights reserved.</p>
+  </footer>
+</body>
+</html>
